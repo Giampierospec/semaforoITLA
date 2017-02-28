@@ -15,8 +15,11 @@
           <div id="Yellow2" class="bulb"></div>
           <div id="Green2" class="bulb"></div>
       </div>
+        <div id="message2" class="text-center">
 
+        </div>
     </div>
+
 
   </body>
   <script type="text/javascript" src="/tarea7/js/semaforo2.js"></script>

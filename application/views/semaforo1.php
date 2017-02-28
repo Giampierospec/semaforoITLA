@@ -15,7 +15,9 @@
           <div id="Yellow1" class="bulb"></div>
           <div id="Green1" class="bulb"></div>
       </div>
+      <div id="message1" class="text-center">
 
+      </div>
     </div>
 
   </body>

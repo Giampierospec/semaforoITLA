@@ -1,6 +1,7 @@
 var red = document.getElementById("Red2");
 var yellow = document.getElementById("Yellow2");
 var green = document.getElementById("Green2");
+var message = document.getElementById("message2");
 var redId, yellowId, greenId,frameId,color;
 
 function frame(){
@@ -20,6 +21,9 @@ function loadData(){
     var datos = localStorage.getItem('intervalo');
     if(datos != null){
         color = JSON.parse(datos);
+        h1 = document.createElement("h1");
+        h1.innerHTML = "El tiempo base es "+color.intervalo+" milisegundos";
+        message.appendChild(h1);
         frameChanged()
     }
     else{
