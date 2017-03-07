@@ -46,8 +46,8 @@ $data_retrieved = (empty($datos['Red']))?0:$datos;
      tiempoGreen = datos;
   }
   else{
-    tiempoRed = "<?php echo (empty($datos))?'else':$datos['Red']?>";
-    tiempoGreen = "<?php echo (empty($datos))?'else':$datos['Green']?>";
+    tiempoRed = <?php echo (empty($datos))?0:$datos['Red']?> * 1000;
+    tiempoGreen = <?php echo (empty($datos))?0:$datos['Green']?> *1000;
   }
 
   </script>
