@@ -1,4 +1,4 @@
-var color = "Red";
+var color = "";
 var red = document.getElementById("Red");
 var yellow = document.getElementById("Yellow");
 var green = document.getElementById("Green");
