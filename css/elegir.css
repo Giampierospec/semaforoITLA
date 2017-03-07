@@ -1,0 +1,16 @@
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Russo one',monospace;
+}
+body{
+  background-color:#808080;
+}
+p{
+  font-family: 'Indie Flower', monospace;
+}
+.container-fluid{
+ margin: 10% auto;
+}
+.bg-dark-blue{
+  background-color: #04081A;
+  color: #FFF;
+}

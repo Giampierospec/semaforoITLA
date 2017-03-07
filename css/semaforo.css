@@ -1,0 +1,30 @@
+
+#traffic-light{
+  height: 550px;
+    width: 200px;
+    background-color: #333;
+    border-radius: 40px;
+    margin: 30px auto;
+    padding: 20px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: 'Russo one',monospace;
+}
+body{
+  background-color:#808080;
+}
+p{
+  font-family: 'Indie Flower', monospace;
+}
+.bg-dark-blue{
+  background-color: #04081A;
+  color: #FFF;
+}
+.bulb {
+  height: 150px;
+  width: 150px;
+  background-color: #111;
+  border-radius: 50%;
+  margin: 25px auto;
+  transition: background 500ms;
+}
