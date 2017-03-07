@@ -8,8 +8,8 @@ function frame(){
   if(tiempoRed != 0 && tiempoGreen != 0){
     console.log("tiempoRojo "+tiempoRed+" tiempoVerde "+tiempoGreen);
     setTimeout(redbck,1000);
-    setTimeout(greenbck,tiempoRed+100);
-    setTimeout(yellowbck,tiempoGreen+200);
+    setTimeout(greenbck,tiempoRed+1000);
+    setTimeout(yellowbck,tiempoGreen+2000);
   }
   else{
     setTimeout(redbck,1000);
