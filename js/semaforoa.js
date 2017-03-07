@@ -5,7 +5,7 @@ var message = document.getElementById("message");
 var color = "Red";
 var tiempo = 0;
 function frame(){
-  if(tiempoRed != null && tiempoGreen != null){
+  if(tiempoRed != 0 && tiempoGreen != 0){
     console.log("tiempoRojo "+tiempoRed+" tiempoVerde "+tiempoGreen);
     setTimeout(redbck,1000);
     setTimeout(greenbck,tiempoRed+100);
