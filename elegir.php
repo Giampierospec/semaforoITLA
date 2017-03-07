@@ -25,13 +25,13 @@
           <p>Por favor escoja una opción</p>
           <div class="row">
             <div class="col-sm-4">
-              <a href="index.php?calle=A" target="_blank"class="btn btn-default"><i class="fa fa-road"></i> Calle A</a>
+              <a href="index.php?calle=A" target="_blank"class="btn btn-default"><i class="fa fa-road" onclick="enableB();"></i> Calle A</a>
             </div>
             <div class="col-sm-4">
               <a href="index.php?calle=B"  target="_blank"class="btn btn-default"><i class="fa fa-road"></i> Calle B</a>
             </div>
             <div class="col-sm-4">
-              <a href="config.php" target="_blank" class="btn btn-default"><i class="fa fa-lock"></i> Admin</a>
+              <a href="config.php" class="btn btn-default"><i class="fa fa-lock"></i> Admin</a>
             </div>
           </div>
       </div>

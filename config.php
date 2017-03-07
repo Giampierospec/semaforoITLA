@@ -1,6 +1,7 @@
 <?php
 if($_POST){
   file_put_contents('config.txt', json_encode($_POST));
+  header("Location:index.php");
 }
 
 $datos = json_decode(file_get_contents('config.txt'),true);
