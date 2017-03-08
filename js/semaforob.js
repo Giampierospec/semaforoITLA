@@ -2,9 +2,9 @@
 var red = document.getElementById("Red");
 var yellow = document.getElementById("Yellow");
 var green = document.getElementById("Green");
-
+var color = "Red";
 function ciclo(){
-  var color = "Red";
+
   $.ajax({
     url: 'server.php',
     method: 'get',
@@ -24,7 +24,7 @@ function ciclo(){
   }
   clearLights();
   $("#"+color).css("background-color",color.toLowerCase());
-  setTimeout(ciclo, 500);
+  setTimeout(ciclo, 200);
 }
 function clearLights(){
     red.style.backgroundColor = "#111";
