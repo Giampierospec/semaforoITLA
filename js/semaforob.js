@@ -13,7 +13,6 @@ function ciclo(){
   });
 
   if(color == 'Red'){
-
     color = 'Green';
   }
   else if(color == 'Green'){
