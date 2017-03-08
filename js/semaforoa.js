@@ -5,7 +5,7 @@ var message = document.getElementById("message");
 var color = "Red";
 var tiempo = 0;
 function frame(){
-  if(tiempoRed != 0 && tiempoGreen != 0){
+  if(tiempoRed != 0 && tiempoGreen != 0 && tiempoYellow != 0){
     console.log("tiempoRojo "+tiempoRed+" tiempoVerde "+tiempoGreen);
     setTimeout(redbck,1000);
     setTimeout(greenbck,tiempoRed+1000);
@@ -33,11 +33,22 @@ function greenbck(){
   actualizarServidor(color);
 }
 function yellowbck(){
-  clearLights();
-  color = "Yellow";
-  $("#"+color).css("background-color",color.toLowerCase());
-  actualizarServidor(color);
-  setTimeout(frame,3000);
+
+  if(tiempoYellow!= 0){
+    clearLights();
+    color = "Yellow";
+    $("#"+color).css("background-color",color.toLowerCase());
+    actualizarServidor(color);
+    setTimeout(frame,tiempoYellow+3000);
+  }
+  else{
+    clearLights();
+    color = "Yellow";
+    $("#"+color).css("background-color",color.toLowerCase());
+    actualizarServidor(color);
+    setTimeout(frame,3000);
+  }
+
 
 }
 

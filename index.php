@@ -4,7 +4,7 @@ if(!isset($_GET['calle'])){
 }
 $calle = $_GET['calle'];
 $datos = json_decode(file_get_contents('config.txt'),true);
-$data_retrieved = (empty($datos['Red']))?0:$datos;
+$data_retrieved = (empty($datos['Red']))?0:'E';
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,16 +38,19 @@ $data_retrieved = (empty($datos['Red']))?0:$datos;
   </div>
 <?php if($calle =='A'): ?>
   <script type="text/javascript">
-  var datos =  <?php echo $data_retrieved ?>;
+  var datos =  '<?php echo $data_retrieved?>';
   var tiempoRed = 0;
   var tiempoGreen = 0;
+  var tiempoYellow = 0;
   if(datos == 0){
      tiempoRed = datos;
      tiempoGreen = datos;
+     tiempoYellow = datos;
   }
   else{
-    tiempoRed = <?php echo (empty($datos))?0:$datos['Red']?> * 1000;
-    tiempoGreen = <?php echo (empty($datos))?0:$datos['Green']?> *1000;
+    tiempoRed = <?php echo (empty($datos))?0:$datos['Red'];?> * 1000;
+    tiempoGreen = <?php echo (empty($datos))?0:$datos['Green'];?> *1000;
+    tiempoYellow = <?php echo (empty($datos))?0:$datos['Yellow'];?> *1000;
   }
 
   </script>

@@ -50,6 +50,16 @@ $datos = json_decode(file_get_contents('config.txt'),true);
                   </div>
                 </div>
               </div>
+              <div class="form-group">
+                <div class="row">
+                  <div class="col-sm-6">
+                    <label for="Yellow"><p>Introduzca el intervalo para el Amarillo</p> </label>
+                  </div>
+                  <div class="col-sm-6">
+                    <input type="number" name="Yellow" class="form-control" value="<?php echo $datos['Yellow']; ?>" />
+                  </div>
+                </div>
+              </div>
               <button type="submit" class="btn btn-default"><i class="fa fa-paper-plane"></i> Guardar</button>
               </form>
           </div>
