@@ -6,7 +6,7 @@ var color = "Red";
 var tiempo = 0;
 function frame(){
   if(tiempoRed != 0 && tiempoGreen != 0 && tiempoYellow != 0){
-    console.log("tiempoRojo "+tiempoRed+" tiempoVerde "+tiempoGreen);
+    console.log("tiempoRojo "+tiempoRed+" tiempoVerde "+tiempoGreen+ " tiempoAmarillo "+ tiempoYellow);
     setTimeout(redbck,1000);
     setTimeout(greenbck,tiempoRed+1000);
     setTimeout(yellowbck,tiempoGreen+2000);

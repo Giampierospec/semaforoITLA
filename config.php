@@ -30,7 +30,7 @@ $datos = json_decode(file_get_contents('config.txt'),true);
             <h1>Escriba el intervalo para los semáforos</h1>
             <form class="form-horizontal" action="" method="post">
 
-                <div class="form-group">
+                <div class="form-group input group">
                   <div class="row">
                     <div class="col-sm-6">
                       <label for="Green"><p>Introduzca el intervalo para el Verde </p></label>
@@ -40,7 +40,7 @@ $datos = json_decode(file_get_contents('config.txt'),true);
                     </div>
                   </div>
               </div>
-              <div class="form-group">
+              <div class="form-group input-group">
                 <div class="row">
                   <div class="col-sm-6">
                     <label for="Red"><p>Introduzca el intervalo para el Rojo</p> </label>
@@ -50,7 +50,7 @@ $datos = json_decode(file_get_contents('config.txt'),true);
                   </div>
                 </div>
               </div>
-              <div class="form-group">
+              <div class="form-group input-group">
                 <div class="row">
                   <div class="col-sm-6">
                     <label for="Yellow"><p>Introduzca el intervalo para el Amarillo</p> </label>

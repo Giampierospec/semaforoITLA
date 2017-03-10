@@ -17,10 +17,10 @@ function ciclo(){
     color = 'Green';
   }
   else if(color == 'Green'){
-    color = 'Red';
+    color = 'Yellow';
   }
   else if(color == 'Yellow'){
-    color = 'Yellow';
+    color = 'Red';
   }
   clearLights();
   $("#"+color).css("background-color",color.toLowerCase());
